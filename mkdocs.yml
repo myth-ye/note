@@ -1,0 +1,41 @@
+site_name: 'Reading note'
+site_description: '我的读书笔记'
+site_author: 'Myth'
+site_url: 'http://note.meng.li/'
+theme:
+  name: 'material'
+  language: 'zh'
+  font: false
+  feature:
+    tabs: false
+  palette:
+    primary: 'indigo'
+    accent: 'green'
+google_analytics:
+  - 'UA-24944639-2'
+  - 'auto'
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.mark
+extra_javascript:
+  - 'https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
+#config finish
+pages:
+    - Home: index.md
+    - About: about.md
+    - LinkLoader:
+         - Contents: linkloader/index.md
+         - 温故而知新: linkloader/chapter1.md
+    - Compliers:
+         - Contents: compilers/index.md
+         - 引论: compilers/chapter1.md
+    - SE:
+         - Contents: se/index.md
+         - 编写高质量代码: se/chapter3.md
