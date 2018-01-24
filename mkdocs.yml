@@ -11,9 +11,7 @@ theme:
   palette:
     primary: 'indigo'
     accent: 'green'
-google_analytics:
-  - 'UA-24944639-2'
-  - 'auto'
+
 markdown_extensions:
   - admonition
   - codehilite
@@ -29,6 +27,7 @@ extra_javascript:
 #config finish
 pages:
     - Home: index.md
+    - Useage: useage.md
     - About: about.md
     - LinkLoader:
          - Contents: linkloader/index.md
